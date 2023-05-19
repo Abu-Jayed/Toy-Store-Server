@@ -1,0 +1,184 @@
+[
+    {
+      "name": "Thor & Hammer",
+      "category": "Marvel",
+      "subCategory": "Hero",
+      "price": "$19.99",
+      "rating": "4.8",
+      "available_quantity": "10",
+      "description": "Show your love for marvel Comics with this Thor Toy.",
+      "picture": "https://m.media-amazon.com/images/I/61+HoXk0BvL._AC_SX522_.jpg"
+    },
+    {
+      "name": "Iron Man",
+      "category": "Marvel",
+      "subCategory": "Hero",
+      "price": "$16.99",
+      "rating": "4.7",
+      "available_quantity": "25",
+      "description": "Unleash your inner superhero with this detailed Iron Man action figure.",
+      "picture": "https://example.com/harry_potter_book.jpg"
+    },
+    {
+      "name": "Scarlet Witch",
+      "category": "Marvel",
+      "subCategory": "Heroine",
+      "price": "$24.99",
+      "rating": "4.7",
+      "available_quantity": "5",
+      "description": "Unleash your inner superhero with this detailed Scarlet witch action figure.",
+      "picture": "https://m.media-amazon.com/images/I/717zmzdwvxL._AC_SY879_.jpg"
+    },
+    {
+      "name": "Black Widow",
+      "category": "Marvel",
+      "subCategory": "Heroine",
+      "price": "$14.99",
+      "rating": "4.6",
+      "available_quantity": "15",
+      "description": "Experience the empowering story of Black in this thrilling toy release.",
+      "picture": "https://m.media-amazon.com/images/I/51VxeXsUaQL._AC_SL1000_.jpg"
+    },
+    {
+      "name": "Thanos",
+      "category": "Marvel",
+      "subCategory": "Villain",
+      "price": "$39.99",
+      "rating": "4.5",
+      "available_quantity": "20",
+      "description": "Experience the empowering story of Greate thanos in this thrilling DVD release.",
+      "picture": "https://m.media-amazon.com/images/I/61Bryq+v9-L._AC_SX522_.jpg"
+    },
+    {
+      "name": "Kang The Conqurer",
+      "category": "Marvel",
+      "subCategory": "Villain",
+      "price": "$29.99",
+      "rating": "4.9",
+      "available_quantity": "8",
+      "description": "Time is not what you think it, it is a cage. I can give you time.",
+      "picture": "https://m.media-amazon.com/images/I/61KYgqlKqvL._AC_SX522_.jpg"
+    },
+    {
+      "name": "Superman",
+      "category": "DC",
+      "subCategory": "Hero",
+      "price": "$99.99",
+      "rating": "4.9",
+      "available_quantity": "10",
+      "description": "Show your love for DC strongets super hero with superman toy.",
+      "picture": "https://m.media-amazon.com/images/I/61HNHAGIatL._AC_SX569_.jpg"
+    },
+    {
+      "name": "Batman",
+      "category": "DC",
+      "subCategory": "Hero",
+      "price": "$42.99",
+      "rating": "4.8",
+      "available_quantity": "25",
+      "description": "This Gautham city is full of crime. I will clean it.",
+      "picture": "https://m.media-amazon.com/images/I/61wntQVG0rL._AC_SX522_.jpg"
+    },
+    {
+      "name": "Wonder Woman",
+      "category": "DC",
+      "subCategory": "Heroin",
+      "price": "$24.99",
+      "rating": "4.7",
+      "available_quantity": "5",
+      "description": "Unleash your inner superhero with this detailed Wonder women action figure.",
+      "picture": "https://m.media-amazon.com/images/I/61vbP6bXhTL._AC_SX569_.jpg"
+    },
+    {
+      "name": "Queen Of Atlans",
+      "category": "DC",
+      "subCategory": "Heroin",
+      "price": "$14.99",
+      "rating": "4.6",
+      "available_quantity": "15",
+      "description": "Experience the empowering story of Qween in this thrilling release.",
+      "picture": "https://i5.walmartimages.com/asr/aaa9103c-82c0-42aa-963d-410c3b4caaf7_1.1ad3620650dbd47b9c705f13f71efe0d.jpeg"
+    },
+    {
+      "name": "DarkSeid",
+      "category": "DC",
+      "subCategory": "Villain",
+      "price": "$19.99",
+      "rating": "4.4",
+      "available_quantity": "20",
+      "description": "Stay cozy and show your Gryffindor pride with this DarkSeid scarf.",
+      "picture": "https://m.media-amazon.com/images/I/81MnGOCBzYL._AC_SX425_.jpg"
+    },
+    {
+      "name": "Joker",
+      "category": "DC",
+      "subCategory": "Villain",
+      "price": "$129.99",
+      "rating": "4.9",
+      "available_quantity": "8",
+      "description": "Carry your essentials in style with this Jocker inspired Toy.",
+      "picture": "https://m.media-amazon.com/images/I/71nodcQTIHL._AC_SX522_.jpg"
+    },
+    {
+      "name": "Professor",
+      "category": "Harry Potter",
+      "subCategory": "Hero",
+      "price": "$19.99",
+      "rating": "4.5",
+      "available_quantity": "10",
+      "description": "Show your love for Harry Potter Comics with this professor toy.",
+      "picture": "https://m.media-amazon.com/images/I/71nnssVhalL._AC_SX522_.jpg"
+    },
+    {
+      "name": "Harry Potter",
+      "category": "Harry Potter",
+      "subCategory": "Hero",
+      "price": "$12.99",
+      "rating": "4.8",
+      "available_quantity": "25",
+      "description": "Experience the magical world of Harry Potter in this first installment of the series.",
+      "picture": "https://m.media-amazon.com/images/I/81k4HZZT1PS._AC_SX522_.jpg"
+    },
+    {
+      "name": "Ms: Proffessor",
+      "category": "Harry Potter",
+      "subCategory": "Heroine",
+      "price": "$24.99",
+      "rating": "4.7",
+      "available_quantity": "5",
+      "description": "Unleash your inner superhero with this detailed harry potter action figure.",
+      "picture": "https://m.media-amazon.com/images/I/81JsiYOLIWL._AC_SY550_.jpg"
+    },
+    {
+      "name": "Ema Watson",
+      "category": "Harry Potter",
+      "subCategory": "Heroine",
+      "price": "$14.99",
+      "rating": "4.6",
+      "available_quantity": "15",
+      "description": "Experience the empowering story of ema watson in this thrilling DVD release.",
+      "picture": "https://m.media-amazon.com/images/I/81NfWXsSDZS.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {
+      "name": "Voldimor",
+      "category": "Harry Potter",
+      "subCategory": "Villain",
+      "price": "$159.99",
+      "rating": "4.4",
+      "available_quantity": "20",
+      "description": "Stay cozy and show your Gryffindor pride with this Harry Potter-themed scarf.",
+      "picture": "https://m.media-amazon.com/images/I/71RqUFZTqnL._AC_UY500_.jpg"
+    },
+    {
+      "name": "Professor snap",
+      "category": "Harry Potter",
+      "subCategory": "Villain",
+      "price": "$29.99",
+      "rating": "4.9",
+      "available_quantity": "8",
+      "description": "Carry your essentials in style with this snap shield-inspired Toy.",
+      "picture": "https://m.media-amazon.com/images/I/71ShtYq6JTL._AC_SY879_.jpg"
+    }
+  ]
+
+  
