@@ -38,7 +38,7 @@ async function run() {
     const result = await toyCollection.createIndex(indexKeys, indexOptions);
 
     /* search toy code here */
-app.get("/getJobsByText/:text", async (req, res) => {
+app.get("/getToyByName/:text", async (req, res) => {
   const text = req.params.text;
   const result = await toyCollection
     .find({
@@ -105,7 +105,7 @@ app.get("/details/:id", async (req, res) => {
     
 
   /* add toy start */
-  app.post("/post-job", async (req, res) => {
+  app.post("/addToy", async (req, res) => {
     const body = req.body;
     body.createdAt = new Date();
     console.log(body);
@@ -122,7 +122,7 @@ app.get("/details/:id", async (req, res) => {
   /* add toy end */
 
 /* show my toy page code start  */
-app.get("/myJobs/:email", async (req, res) => {
+app.get("/myToys/:email", async (req, res) => {
   console.log('email',req.params.email);
   console.log( 'query',req.query.grow);
   const sortObj = {}
@@ -134,19 +134,19 @@ app.get("/myJobs/:email", async (req, res) => {
   const sortWith = sortObj.a;
   console.log('sortWith',sortWith);
   console.log('sortObj',sortObj);
-  const jobs = await toyCollection
+  const toys = await toyCollection
     .find({
       postedBy: req.params.email,
     })
     .sort({price: sortWith})
     .toArray();
-  res.send(jobs);
+  res.send(toys);
 });
 /* show my toy page code end */
 
 
 /* update toy start */
-app.put("/updateJob/:id", async (req, res) => {
+app.put("/updateToy/:id", async (req, res) => {
   const id = req.params.id;
   const body = req.body;
   // console.log(body);
