@@ -123,11 +123,22 @@ app.get("/details/:id", async (req, res) => {
 
 /* show my toy page code start  */
 app.get("/myJobs/:email", async (req, res) => {
-  console.log(req.params.id);
+  console.log('email',req.params.email);
+  console.log( 'query',req.query.grow);
+  const sortObj = {}
+  if(req.query.grow === 'yes'){
+    sortObj.a=1
+  }else{
+    sortObj.a=-1
+  }
+  const sortWith = sortObj.a;
+  console.log('sortWith',sortWith);
+  console.log('sortObj',sortObj);
   const jobs = await toyCollection
     .find({
       postedBy: req.params.email,
     })
+    .sort({price: sortWith})
     .toArray();
   res.send(jobs);
 });
