@@ -6,7 +6,19 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // middleware
-app.use(cors());
+// app.use(cors());
+
+/* sir ans start */
+const corsConfig = {
+origin: '*',
+credentials: true,
+methods: ['GET', 'POST', 'PUT', 'DELETE']
+}
+app.use(cors(corsConfig))
+app.options("*", cors(corsConfig))
+/* sir ans end */
+
+
 app.use(express.json());
 
 
@@ -27,7 +39,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
+    // await client.connect();
 
     const toyCollection = client.db("toyHeroDB").collection("toyCollection");
 
@@ -35,7 +47,7 @@ async function run() {
     /* search code  */
     const indexKeys = { name: 1, category: 1 }; // Replace field1 and field2 with your actual field names
     const indexOptions = { name: "toyCategory" }; // Replace index_name with the desired index name
-    const result = await toyCollection.createIndex(indexKeys, indexOptions);
+    // const result = await toyCollection.createIndex(indexKeys, indexOptions);
 
     /* search toy code here */
 app.get("/getToyByName/:text", async (req, res) => {
@@ -61,7 +73,7 @@ app.get("/getToyByName/:text", async (req, res) => {
     });
     /* show limited data */
     app.get("/allToy/:limit", async (req, res) => {
-      console.log(req.params.limit);
+      // console.log(req.params.limit);
       const toyLimit = parseInt(req.params.limit)
       const cursor = toyCollection.find().limit(toyLimit);
       const result = await cursor.toArray();
@@ -108,7 +120,7 @@ app.get("/details/:id", async (req, res) => {
   app.post("/addToy", async (req, res) => {
     const body = req.body;
     body.createdAt = new Date();
-    console.log(body);
+    // console.log(body);
     const result = await toyCollection.insertOne(body);
     if (result?.insertedId) {
       return res.status(200).send(result);
@@ -123,8 +135,8 @@ app.get("/details/:id", async (req, res) => {
 
 /* show my toy page code start  */
 app.get("/myToys/:email", async (req, res) => {
-  console.log('email',req.params.email);
-  console.log( 'query',req.query.grow);
+  // console.log('email',req.params.email);
+  // console.log( 'query',req.query.grow);
   const sortObj = {}
   if(req.query.grow === 'yes'){
     sortObj.a=1
@@ -132,8 +144,8 @@ app.get("/myToys/:email", async (req, res) => {
     sortObj.a=-1
   }
   const sortWith = sortObj.a;
-  console.log('sortWith',sortWith);
-  console.log('sortObj',sortObj);
+  // console.log('sortWith',sortWith);
+  // console.log('sortObj',sortObj);
   const toys = await toyCollection
     .find({
       postedBy: req.params.email,
