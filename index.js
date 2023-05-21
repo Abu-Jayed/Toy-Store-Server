@@ -5,8 +5,7 @@ require('dotenv').config()
 const app = express();
 const port = process.env.PORT || 5000;
 
-// middleware
-// app.use(cors());
+
 
 /* sir ans start */
 const corsConfig = {
@@ -45,9 +44,8 @@ async function run() {
 
 
     /* search code  */
-    const indexKeys = { name: 1, category: 1 }; // Replace field1 and field2 with your actual field names
-    const indexOptions = { name: "toyCategory" }; // Replace index_name with the desired index name
-    // const result = await toyCollection.createIndex(indexKeys, indexOptions);
+    const indexKeys = { name: 1, category: 1 }; 
+    const indexOptions = { name: "toyCategory" }; 
 
     /* search toy code here */
 app.get("/getToyByName/:text", async (req, res) => {
@@ -188,10 +186,6 @@ app.delete('/toys/:id', async (req, res) => {
 })
 
 /* delete code end */
-
-
-
-    
 
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
