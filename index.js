@@ -169,6 +169,8 @@ app.put("/updateToy/:id", async (req, res) => {
       name: body.name,
       rating: body.rating,
       category: body.category,
+      price: body.price,
+      available_quantity: body.available_quantity,
     },
   };
   const result = await toyCollection.updateOne(filter, updateDoc);
